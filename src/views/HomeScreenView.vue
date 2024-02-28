@@ -1,9 +1,8 @@
 <script setup>
-import HeaderComponent from '../components/HeaderComponent.vue'
 </script>
 
 <template>
-  <HeaderComponent />
+  
 
   <div class="w-screen h-screen img-bg-content ">
     <div class="container flex justify-evenly pt-32">

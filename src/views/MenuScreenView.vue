@@ -1,20 +1,12 @@
 <script setup>
+import SubMenu from '@/components/SubMenu.vue';
 import HeaderComponent from '../components/HeaderComponent.vue'
+import { RouterLink } from 'vue-router';
 
 </script>
 <template>
-  <HeaderComponent />
-  <div>
-    <div>
-      <p> The Menu </p>
-      <p> Most popular Items </p>
-    </div>
-    <div>
-      <h3>Breakfast</h3>
-      <h3>Launch</h3>
-      <h3>Dinner</h3>
-    </div>
-
+  <div class="bg-slate-300 ">
+    <SubMenu />
     <div>
       <div>
         <img />
@@ -22,7 +14,7 @@ import HeaderComponent from '../components/HeaderComponent.vue'
       <div>
         <p>title</p>
         <p>Lorem ipsum dolor sit amet.</p>
-        <p>Rp 48K</p> 
+        <p>Rp 48K</p>
       </div>
     </div>
   </div>

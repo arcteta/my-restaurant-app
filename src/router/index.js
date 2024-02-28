@@ -1,6 +1,9 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { RouterView, createRouter, createWebHistory } from 'vue-router'
 import HomeScreenView from '../views/HomeScreenView.vue'
 import MenuScreenView from '@/views/MenuScreenView.vue'
+import MenuBreakfastScreenView from '../views/MenuBreakfastScreenView.vue'
+import MenuLunchScreenView from '@/views/MenuLunchScreenView.vue'
+import MenuDinnerScreenView from '@/views/MenuDinnerScreenView.vue'
 import BookingScreenView from '@/views/BookingScreenView.vue'
 
 const router = createRouter({
@@ -9,17 +12,34 @@ const router = createRouter({
     {
       path: '/',
       name: 'home',
-      component: HomeScreenView
+      component: HomeScreenView,
     },
     {
       path: '/menu',
       name: 'menu',
-      component: MenuScreenView
+      component: RouterView,
+      children: [
+        {
+          path : '/menu',
+          component: MenuScreenView
+        },
+        {
+          path: 'menu-breakfast',
+          component: MenuBreakfastScreenView
+        },
+        {
+          path: 'menu-lunch',
+          component: MenuLunchScreenView
+        },
+        {
+          path: 'menu-dinner',
+          component: MenuDinnerScreenView
+        }
+      ]
     },
     {
       path: '/booking',
-      name: 'booking',
-      component: BookingScreenView
+      component: BookingScreenView,
     }
   ]
 })

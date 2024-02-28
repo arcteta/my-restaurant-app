@@ -5,9 +5,8 @@ import HeaderComponent from '../components/HeaderComponent.vue'
 <template>
   <HeaderComponent />
 
-  <div class="w-screen h-screen bg-firstContent img-bg-content" >
-    <div class="w-screen h-sceen bg-gray-950 bg-transparent"></div>
-    <div class="container flex pt-3 justify-evenly justify-items-center">
+  <div class="w-screen h-screen img-bg-content ">
+    <div class="container flex justify-evenly pt-32">
       <div>
         <img class="shadow-xl shadow-black " width="720" height="480" src="../assets/img/restaurant-2.jpg"
           alt="img-error-load">
@@ -15,8 +14,10 @@ import HeaderComponent from '../components/HeaderComponent.vue'
 
       <div class="bg-firstContent shadow-xl text-center flex justify-center">
         <p class="">"makanan enak itu nikmat ketika dihidangkan saat panas"</p>
+        <button @click="$router.push('/booking')"> booking now </button>
       </div>
     </div>
+
   </div>
 </template>
 

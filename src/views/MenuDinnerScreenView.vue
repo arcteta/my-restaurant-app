@@ -8,4 +8,5 @@ import SubMenu from '@/components/SubMenu.vue';
 </template>
 
 <style>
+
 </style>

@@ -5,11 +5,11 @@ import { RouterLink } from 'vue-router';
 
 </script>
 <template>
+  <SubMenu />
   <div class="bg-slate-300 ">
-    <SubMenu />
-    <div>
+    <div class="flex flex-row ">
       <div>
-        <img />
+        <img width="52" height="52" src="https://picsum.photos/200" />
       </div>
       <div>
         <p>title</p>

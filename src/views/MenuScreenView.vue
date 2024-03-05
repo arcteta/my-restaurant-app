@@ -10,15 +10,25 @@ store.fetchMenu()
 </script>
 <template>
   <SubMenu />
-
+  
     <div class="bg-slate-200">
-    <p> lorem12</p>
-    <div>
-      <ul v-for="item in store.menus" >
-        <li>
-          {{ item.name}}
-        </li>
-      </ul> 
+    <div v-for="item in store.menus" :key="item.id" :item="item">
+      <div class="grid grid-cols-2">
+        <div>
+        <img :src="item.image" :alt="item.item_name" width="52" height="52">
+        <p>{{ item.id }}</p>
+        <p>{{ item.name }}</p>
+        <p>{{ item.price }}</p>
+        <p>{{ item.detail }}</p>
+        </div>
+        <div>
+        <img :src="item.image" :alt="item.item_name" width="52" height="52">
+        <p>{{ item.id }}</p>
+        <p>{{ item.name }}</p>
+        <p>{{ item.price }}</p>
+        <p>{{ item.detail }}</p>
+        </div>
+      </div>
     </div>
   </div>
 

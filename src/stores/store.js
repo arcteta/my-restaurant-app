@@ -5,11 +5,12 @@ import { defineStore } from 'pinia'
 
 export const useMenuStore = defineStore('menu', () => {
 
-  const menus = ref({})
+  const menus = ref([])
   const error = ref({})
 
   function fetchMenu() {
-    fetch('../assets/data.json')
+    fetch('http://localhost:8000/menu')
+      .then( response => response.json())
       .then((data) => menus.value = data)
       .catch((err) => { error.value = err })
   }

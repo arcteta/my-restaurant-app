@@ -11,9 +11,13 @@
           alt="img-error-load">
       </div>
 
-      <div class="bg-firstContent shadow-xl text-center flex justify-center">
-        <p class="">"makanan enak itu nikmat ketika dihidangkan saat panas"</p>
-        <button @click="$router.push('/booking')"> booking now </button>
+      <div class="bg-firstContent shadow-xl justify-items-center text-center pt-24">
+        <div class="flex justify-center font-mainFont font-semibold px-3">
+          <p class="text-3xl">"welcome to restorante home for the best serve"</p>
+        </div>
+        <div>
+          <button class="bg-secondContent text-fourthContent p-2 mt-24 text-2xl border border-slate-800 border-r-4 border-b-4" @click="$router.push('/booking')">BOOK SEAT</button>
+        </div>
       </div>
     </div>
 

@@ -26,7 +26,7 @@ import { RouterLink } from 'vue-router';
                     <RouterLink to="/booking">
                         <p
                             class="text-2xl bg-firstContent p-3 pt-1  text-fourthContent mr-12 border border-slate-800 border-r-4 border-b-4 font-mainFont font-semibold">
-                            Book a Table now!
+                            BOOK SEAT
                         </p>
                     </RouterLink>
                 </li>

@@ -3,12 +3,11 @@ import { RouterLink } from 'vue-router';
 
 </script>
 <template>
-    <div class="bg-yellow-200 flex flex-col justify-items-center text-center">
-        <p class=" font-mainFont font-medium"> The Menu </p>
-        <hr class="bg-blue-900">
-        <p class="font-mainFont font-medium"> Most popular Items </p>
+    <div class=" flex flex-col justify-items-center text-center">
+        <p class=" font-mainFont font-semibold"> The Menu </p>
+        <p class="font-mainFont font-semibold"> Most popular Items </p>
     </div>
-    <div class="flex flex-row text-center justify-center text-fourthContent text-xl ">
+    <div class="flex flex-row text-center justify-center text-fourthContent text-xl mb-3">
         <RouterLink to="/menu/menu-breakfast">
             <button class="bg-secondContent p-2 border-slate-800 border-r-4 border-b-4 mt-2 mr-5">Breakfast</button>
         </RouterLink>

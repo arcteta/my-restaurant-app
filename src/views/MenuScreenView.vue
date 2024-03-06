@@ -13,20 +13,26 @@ store.fetchMenu()
   
     <div class="bg-slate-200">
     <div v-for="item in store.menus" :key="item.id" :item="item">
-      <div class="grid grid-cols-2">
-        <div>
-        <img :src="item.image" :alt="item.item_name" width="52" height="52">
-        <p>{{ item.id }}</p>
-        <p>{{ item.name }}</p>
-        <p>{{ item.price }}</p>
-        <p>{{ item.detail }}</p>
+      <div class="grid grid-cols-2 pt-2">
+        <div class="flex mx-3 mb-2 justify-self-center bg-secondContent border border-slate-800 border-r-4 border-b-4">
+          <div class="p-2">
+            <img :src="item.image" :alt="item.item_name" width="100" height="100">
+          </div>
+          <div class="ml-2 text-fourthContent p-2">
+            <p>{{ item.name }}</p>
+            <p>${{ item.price }}</p>
+            <p>{{ item.detail }}</p>
+          </div>
         </div>
-        <div>
-        <img :src="item.image" :alt="item.item_name" width="52" height="52">
-        <p>{{ item.id }}</p>
-        <p>{{ item.name }}</p>
-        <p>{{ item.price }}</p>
-        <p>{{ item.detail }}</p>
+        <div class="flex mb-2 justify-self-center bg-secondContent border border-slate-800 border-r-4 border-b-4">
+          <div class="p-2">
+            <img :src="item.image" :alt="item.item_name" width="100" height="100">
+          </div>
+          <div class="ml-2 text-fourthContent p-2">
+            <p>{{ item.name }}</p>
+            <p>${{ item.price }}</p>
+            <p>{{ item.detail }}</p>
+          </div>
         </div>
       </div>
     </div>

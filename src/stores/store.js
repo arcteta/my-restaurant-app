@@ -30,7 +30,7 @@ export const useMenuStore = defineStore('menu', () => {
 
   const subMenu = async (param) => {
     try {
-      const response = await fetch('http://localhost:8001/{param}')
+      const response = await fetch(`http://localhost:8001/${param}`)
       const result = await response.json()
       subMenus.value = result;
     } catch (err) {

@@ -24,15 +24,15 @@ const router = createRouter({
           component: MenuScreenView
         },
         {
-          path: 'menu-breakfast',
+          path: 'breakfast',
           component: MenuBreakfastScreenView
         },
         {
-          path: 'menu-lunch',
+          path: 'lunch',
           component: MenuLunchScreenView
         },
         {
-          path: 'menu-dinner',
+          path: 'dinner',
           component: MenuDinnerScreenView
         }
       ]

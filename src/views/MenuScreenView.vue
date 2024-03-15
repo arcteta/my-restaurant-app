@@ -22,6 +22,10 @@ store.fetchMenu()
             <p>{{ item.name }}</p>
             <p>${{ item.price }}</p>
             <p>{{ item.detail }}</p>
+            <div class="flex flex-row pt-2 justify-end">
+              <button class="bg-firstContent mr-2 p-2 border border-slate-800 border-r-4 border-b-4"> edit </button>
+              <button class="bg-firstContent p-2 border border-slate-800 border-r-4 border-b-4"> tambah </button>
+            </div>
           </div>
         </div>
         <div class="flex mb-2 justify-self-center bg-secondContent border border-slate-800 border-r-4 border-b-4">
@@ -32,6 +36,10 @@ store.fetchMenu()
             <p>{{ item.name }}</p>
             <p>${{ item.price }}</p>
             <p>{{ item.detail }}</p>
+            <div class="flex flex-row pt-2 justify-end">
+              <button class="bg-firstContent mr-2 p-2 border border-slate-800 border-r-4 border-b-4"> edit </button>
+              <button class="bg-firstContent p-2 border border-slate-800 border-r-4 border-b-4"> tambah </button>
+            </div>
           </div>
         </div>
       </div>

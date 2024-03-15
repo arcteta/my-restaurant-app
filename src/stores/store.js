@@ -1,6 +1,5 @@
 import { ref, triggerRef } from 'vue'
 import { defineStore } from 'pinia'
-import { fromJSON } from 'postcss'
 
 
 
@@ -11,12 +10,6 @@ export const useMenuStore = defineStore('menu', () => {
   const error = ref({})
   const subMenusError = ref({})
 
-  // function fetchMenu() {
-  //   fetch('http://localhost:8000/menu')
-  //     .then( response => response.json())
-  //     .then((data) => menus.value = data)
-  //     .catch((err) => { error.value = err })
-  // }
 
   const fetchMenu = async () => {
     try {

@@ -24,7 +24,7 @@ store.fetchMenu()
             <p>{{ item.detail }}</p>
             <div class="flex flex-row pt-2 justify-end">
               <button class="bg-firstContent mr-2 p-2 border border-slate-800 border-r-4 border-b-4"> edit </button>
-              <button class="bg-firstContent p-2 border border-slate-800 border-r-4 border-b-4"> tambah </button>
+              <button class="bg-firstContent p-2 border border-slate-800 border-r-4 border-b-4"> add </button>
             </div>
           </div>
         </div>

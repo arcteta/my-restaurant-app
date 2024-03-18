@@ -6,9 +6,13 @@ import { defineStore } from 'pinia'
 export const useMenuStore = defineStore('menu', () => {
 
   const menus = ref([])
-  const subMenus = ref([])
-  const error = ref({})
-  const subMenusError = ref({})
+  const menusBreakfast = ref([])
+  const menusLunch = ref([])
+  const menusDinner = ref([])
+  const errorMenus = ref({})
+  const errorMenusBreakfast = ref({})
+  const errorMenusLunch = ref({})
+  const errorMenusDinner = ref({})
 
 
   const fetchMenu = async () => {
@@ -17,21 +21,39 @@ export const useMenuStore = defineStore('menu', () => {
       const result = await response.json()
       menus.value = result;
     } catch (err) {
-      error.value = err
+      errorMenus.value = err
     }
   }
 
-  const subMenu = async (param) => {
+  const fetchMenuBreakfast = async () => {
     try {
-      const response = await fetch(`http://localhost:8001/${param}`)
+      const response = await fetch(`http://localhost:8001/breakfast`)
       const result = await response.json()
-      subMenus.value = result;
+      menusBreakfast.value = result;
     } catch (err) {
       subMenusError.value = err
     }
   }
 
+  const fetchMenuLunch = async () => {
+    try {
+      const response = await fetch(`http://localhost:8001/lunch`)
+      const result = await response.json()
+      menusLunch.value = result;
+    } catch (err) {
+      errorMenusLunch.value = err
+    }
+  }
 
-  console.log(menus);
-  return { menus, fetchMenu , subMenu}
+  const fetchMenuDinner = async () => {
+    try {
+      const response = await fetch(`http://localhost:8001/dinner`)
+      const result = await response.json()
+      menusDinner.value = result;
+    } catch (err) {
+      errorMenusDinner.value = err
+    }
+  }
+
+  return { menus, menusBreakfast, menusDinner, menusLunch, errorMenus, errorMenusBreakfast, errorMenusDinner, errorMenusLunch, fetchMenu, fetchMenuBreakfast, fetchMenuDinner, fetchMenuLunch }
 })

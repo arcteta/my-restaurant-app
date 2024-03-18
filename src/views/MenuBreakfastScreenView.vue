@@ -5,13 +5,13 @@ import { useMenuStore } from '@/stores/store';
 
 const store = useMenuStore()
 
-store.subMenu(breakfast);
+store.fetchMenuBreakfast('breakfast');
 
 </script>
 <template>
  <SubMenu/>
  <div class="bg-slate-200">
-    <div v-for="item in store.subMenus" :key="item.id" :item="item">
+    <div v-for="item in store.menusBreakfast" :key="item.id" :item="item">
       <div class="grid grid-cols-2 pt-2">
         <div class="flex mx-3 mb-2 justify-self-center bg-secondContent border border-slate-800 border-r-4 border-b-4">
           <div class="p-2">
@@ -23,7 +23,7 @@ store.subMenu(breakfast);
             <p>{{ item.detail }}</p>
             <div class="flex flex-row pt-2 justify-end">
               <button class="bg-firstContent mr-2 p-2 border border-slate-800 border-r-4 border-b-4"> edit </button>
-              <button class="bg-firstContent p-2 border border-slate-800 border-r-4 border-b-4"> tambah </button>
+              <button class="bg-firstContent p-2 border border-slate-800 border-r-4 border-b-4"> add </button>
             </div>
           </div>
         </div>

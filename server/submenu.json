@@ -45,14 +45,14 @@
     {
       "id": 7,
       "name": "Chicken Burger",
-      "price": "$115",
+      "price": "115",
       "detail": "Ipsum ipsum clita erat amet dolor justo diam",
       "image": "https://picsum.photos/200"
     },
     {
       "id": 8,
       "name": "Chicken Burger",
-      "price": "$115",
+      "price": "115",
       "detail": "Ipsum ipsum clita erat amet dolor justo diam",
       "image": "https://picsum.photos/200"
     }
@@ -103,14 +103,14 @@
     {
       "id": 7,
       "name": "Chicken Burger",
-      "price": "$115",
+      "price": "115",
       "detail": "Ipsum ipsum clita erat amet dolor justo diam",
       "image": "https://picsum.photos/200"
     },
     {
       "id": 8,
       "name": "Chicken Burger",
-      "price": "$115",
+      "price": "115",
       "detail": "Ipsum ipsum clita erat amet dolor justo diam",
       "image": "https://picsum.photos/200"
     }
@@ -161,14 +161,14 @@
     {
       "id": 7,
       "name": "Chicken Burger",
-      "price": "$115",
+      "price": "115",
       "detail": "Ipsum ipsum clita erat amet dolor justo diam",
       "image": "https://picsum.photos/200"
     },
     {
       "id": 8,
       "name": "Chicken Burger",
-      "price": "$115",
+      "price": "115",
       "detail": "Ipsum ipsum clita erat amet dolor justo diam",
       "image": "https://picsum.photos/200"
     }

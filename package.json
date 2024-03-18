@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@headlessui/vue": "^1.7.19",
     "json-server": "^1.0.0-alpha.23",
     "pinia": "^2.1.7",
     "vue": "^3.4.15",
